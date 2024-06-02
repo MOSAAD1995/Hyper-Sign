@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url(public/src/logo.png);
+}
+
+#form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#img {
+    width: 40px;
+    height: 40px;
+}
+
+#signup {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.input {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#submit-btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #45a049;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+.google-login-btn {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   background-color: #4285F4;
+   color: white;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   margin-top: 30px;
+   margin-left: 30px;
+}
+
+.google-login-btn img {
+   width: 24px;
+   height: 24px;
+   margin-right: 10px;
+}
+
+.google-login-btn:hover {
+   background-color: #357AE8;
+}
+#HS {
+position: relative;
+text-align: center; /* Center the image horizontally */
+}
+
+#HS img {
+display: block; /* Ensures the image is treated as a block element */
+margin: 0 auto; /* Centers the image horizontally */
+max-width: 100%; /* Ensures the image does not exceed the width of its container */
+}
+
+#signin {
+text-align: center; /* Center the text horizontally */
+}

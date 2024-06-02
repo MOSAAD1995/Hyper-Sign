@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hyper-Sign</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.login-signup-buttons {
+            margin-top: 10px;
+        }
+
+        .login-signup-buttons button {
+            margin: 0 5px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .login-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .signup-btn {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right"><div class="w3-col s4">
+    <img src="src/HS.png" class="w3-margin-right" style="width:40px;">
+  </div></span>
+</span>
+<div class="w3-bar-item w3-right login-signup-buttons">
+  <a href="login.html" class="w3-button w3-small w3-hover-none w3-hover-text-light-grey">Login</a>
+  <a href="signup.html" class="w3-button w3-small w3-hover-none w3-hover-text-light-grey">Sign Up</a>
+</div>
+
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="src/logo.png" class="w3-margin-right" style="width:80px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span>Made BY:, <strong>MOHAMMED SUAD ALI </strong></span><br>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5><menu></menu></h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-eye fa-fw"></i>  Dashboard</a>
+    <a href="user.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw"></i>  User Profile </a>
+    <a href="Notifications.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  Notifications </a>
+    <a href="Stored Contracts.html" class="w3-bar-item w3-button w3-padding"><i class="fa-solid fa-store"></i>  Stored Contracts</a>
+    <a href="Completed Contracts.html" class="w3-bar-item w3-button w3-padding"><i class="fa-solid fa-file-check"></i>  Completed Contracts</a>
+    <a href="Draft.html" class="w3-bar-item w3-button w3-padding"><i class="fa-solid fa-file-lines"></i>  Draft</a>
+    <a href="Billing.html" class="w3-bar-item w3-button w3-padding"><i class="fa-solid fa-file-invoice-dollar"></i></i>  Billing</a>
+    <a href="Settings.html" class="w3-bar-item w3-button w3-padding"><i class="fa-duotone fa-gear"></i>  Settings</a>
+    <a href="About US.html" class="w3-bar-item w3-button w3-padding"><i class="fa-solid fa-address-card"></i>  About US</a><br><br>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <!-- Header -->
+  <footer class="w3-container w3-padding-16 w3-light-grey">
+    <h4>Dashboard </h4>
+  
+    <!-- Card Container for Recent Files -->
+    <div class="w3-row-padding w3-margin-bottom">
+      <div class="w3-col s3">
+        <div class="w3-card-3">
+          <a href="https://example.com">
+            <img src="src/sign.jpg" alt="Sign new contract" style="width:100%">
+            <div class="w3-container w3-center">
+              <p>Sign your Own</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    
+      <div class="w3-col s3">
+        <div class="w3-card-3">
+          <a href="https://example.com">
+            <img src="src/sign.jpg" alt="Sign new contract" style="width:100%">
+            <div class="w3-container w3-center">
+              <p>Send for Sign</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    
+      <div class="w3-col s3">
+        <div class="w3-card-3">
+          <a href="https://example.com">
+            <img src="src/sign.jpg" alt="Sign new contract" style="width:100%">
+            <div class="w3-container w3-center">
+              <p>Share Contract</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="w3-col s3">
+        <div class="w3-card-3">
+          <a href="https://example.com">
+            <img src="src/sign.jpg" alt="Sign new contract" style="width:100%">
+            <div class="w3-container w3-center">
+              <p>Contract Verification</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="w3-col s3">
+        <div class="w3-card-3">
+          <a href="https://example.com">
+            <img src="src/sign.jpg" alt="Sign new contract" style="width:100%">
+            <div class="w3-container w3-center">
+              <p>Customer Offers</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="w3-col s3">
+        <div class="w3-card-3">
+          <a href="https://example.com">
+            <img src="src/sign.jpg" alt="Sign new contract" style="width:100%">
+            <div class="w3-container w3-center">
+              <p>Contact Support</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      
+    </div>
+    
+
+  
+      
+
+  <!-- Footer -->
+<footer class="w3-container w3-padding-16 w3-light-grey">
+  <h4>Recent Contracts</h4>
+
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-col s2">
+      <div class="w3-card-2">
+        <a href="https://example.com">
+          <img src="src/sign.jpg" alt="Sign new contract" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>Sign new contract</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  
+    <div class="w3-col s2">
+      <div class="w3-card-2">
+        <a href="https://example.com">
+          <img src="src/sign.jpg" alt="Sign new contract" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>Sign new contract</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  
+    <div class="w3-col s2">
+      <div class="w3-card-2">
+        <a href="https://example.com">
+          <img src="src/sign.jpg" alt="Sign new contract" style="width:100%">
+          <div class="w3-container w3-center">
+            <p>Sign new contract</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  
+
+  <div class="w3-col s2">
+    <div class="w3-card-2">
+      <a href="https://example.com">
+        <img src="src/sign.jpg" alt="Sign new contract" style="width:100%">
+        <div class="w3-container w3-center">
+          <p>Sign new contract</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="w3-col s2">
+    <div class="w3-card-2">
+      <a href="https://example.com">
+        <img src="src/sign.jpg" alt="Sign new contract" style="width:100%">
+        <div class="w3-container w3-center">
+          <p>Sign new contract</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+  
+
+  <p>Powered by <a href="mailto:memenihoeng@gmail.com" target="_blank">MOHAMMED SUAD ALI</a></p>
+</footer>
+
+
+<script>
+
+function redirectToLoginSite() {
+  window.location.href = 'login.html';            }
+
+            function openSignupModal() {
+                document.getElementById('signupModal').style.display = 'block';
+            }
+
+            function closeSignupModal() {
+                document.getElementById('signupModal').style.display = 'none';
+            }
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+function connectToFabricNetwork() {
+    // Code to connect to Hyperledger Fabric network using Fabric SDK
+    // Replace placeholders with your actual configurations
+
+    // For example:
+    const connectionProfile = require('./connection-profile.json');
+    const walletPath = 'C:\\Users\\Lenovo\\Desktop\\contract signing web site\\wallet';
+    const userId = 'yourUserId';
+
+    // Sample code to connect (using async/await)
+    async function connect() {
+        try {
+            const { Gateway, Wallets } = require('fabric-network');
+            const gateway = new Gateway();
+
+            await gateway.connect(connectionProfile, {
+                wallet: await Wallets.newFileSystemWallet(walletPath),
+                identity: userId,
+                discovery: { enabled: true, asLocalhost: true }
+            });
+
+            //successfully connected to the network
+            console.log('Connected to Hyperledger Fabric Network.');
+
+            // Change the image source after successful connection
+            document.getElementById('fabricImage').src = 'src/fabric_connected.png';
+        } catch (error) {
+            // Handle connection errors
+            console.error('Failed to connect to Hyperledger Fabric Network:', error);
+        }
+    }
+
+    // Call the connect function
+    connect();
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hyper-Sign</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+<style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        #form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #img {
+            width: 150px;
+            height: 150px;
+        }
+
+        #signup {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .input {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #submit-btn {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .google-login-btn {
+           display: inline-flex;
+           align-items: center;
+           justify-content: center;
+           padding: 10px 20px;
+           border: none;
+           border-radius: 5px;
+           background-color: #4285F4;
+           color: white;
+           font-size: 16px;
+           cursor: pointer;
+           transition: background-color 0.3s;
+           margin-top: 30px;
+           margin-left: 30px;
+        }
+
+        .google-login-btn img {
+           width: 24px;
+           height: 24px;
+           margin-right: 10px;
+        }
+
+        .google-login-btn:hover {
+           background-color: #357AE8;
+        }
+        #HS {
+  position: relative;
+  text-align: center; /* Center the image horizontally */
+}
+
+#HS img {
+  display: block; /* Ensures the image is treated as a block element */
+  margin: 0 auto; /* Centers the image horizontally */
+  max-width: 100%; /* Ensures the image does not exceed the width of its container */
+}
+
+#signin {
+  text-align: center; /* Center the text horizontally */
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="form">
+        <div id="HS">
+            <img id="img" src="src/logo.png">
+            <p id="signin">Login to Hyper-Sign</p>
+        </div>
+        <form action="#" method="POST">
+            <label class="input" for="email">Email
+                <input type="email" name="email" id="email-input" placeholder="eg: name@domain-name.com" required>
+            </label>
+            <label class="input" for="password">Password
+                <input type="password" name="pswd" id="password-input" placeholder="Password" minlength="8" required>
+            </label>
+            <input type="submit" id="submit-btn" value="Log In">
+        </form>
+        <!-- Button for Google Sign-In -->
+<button class="google-login-btn" onclick="loginWithGoogle()">
+    <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google Logo">
+    Login with Google
+  </button>
+  
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+
+
+    <script src="/login.js"></script>
+</body>
+
+</html>
